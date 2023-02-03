@@ -1,3 +1,5 @@
+
+@import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@300;400;700&display=swap');
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -105,51 +107,28 @@ p:last-of-type {
 .education-container {
   display: flex;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .degree1,
 .degree2,
 .degree3 {
-  width: 100%;
-  padding: 1em;
+
+
+  background: white;
+
+
 }
 
-.degree1 {
-  padding: 2em;
-  border-color: hotpink;
-  border-style: dotted;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-self: flex-start;
+.degree-container {  display: flex;
+  width: 33.33333%;
+  padding: 1em;
   flex-direction: column;
-}
-
-.degree2 {
-  padding: 1em;
-  border-color: rgb(61, 9, 250);
-  border-style: dotted;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-self: center;
-  ;
   align-items: center;
-  flex-direction: column;
-}
+  justify-content: center;
+  background: orangered;}
 
-.degree3 {
-  padding: 2em;
-  border-color: rgb(20, 230, 195);
-  border-style: dotted;
-  display: flex;
-  justify-content: space-around;
-  align-self: flex-end;
-  ;
-  align-items: flex-end;
-  flex-direction: column;
-}
+
 
 .job {
   font-size: 2em;
@@ -216,10 +195,12 @@ strong {
 
 .education-container {
   display: flex;
-  width: 30%;
+  width: 50%;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  border: 2px solid purple;
+  margin: 0 auto;
 }
 
 @media (min-width: 1280px) {
