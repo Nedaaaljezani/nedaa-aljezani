@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,900;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,800&display=swap");
+/* 
+
+CSS Instructions
+
+Step 1: Create a copy (fork) of this pen.
+
+Step 2: Paste the @import code for two Google Fonts (https://fonts.google.com) on line 1. Make sure you have read: https://fonts.google.com/knowledge/choosing_type
+
+Step 3: Define the font-family for headings and paragraphs below. Include font-size and color, etc. See https://type-scale.com/ for tips on typographic hierarchy and help with font sizing. For top marks, experiment with font-weight, letter-spacing, line-height, margin-bottom, text-transform, text-align, and other CSS properties as desired.
+
+Step 4: Paste your CodePen link to your pen as a comment on Trello.
+
+*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #2a2a38;
+  flex-direction: column;
+  font-size: 1em;
+}
+
+.project {
+  width: 50%;
+}
+
+.project-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3em; 
+  margin-bottom: 0.8em;
+  text-align: center;
+  color: #e8b862;
+}
+
+.project-category { margin-bottom: 0.8em; 
+  font-size: 2em; 
+  font-style: italic;
+  color:#e8b862;
+}
+
+.project-description { font-size: 1.2em;
+  line-height: 1.4em; 
+  color: white; 
+  text-indent: 2em;
+}

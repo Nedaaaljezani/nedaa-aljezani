@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@300;400;700&display=swap');
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+* :before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #fdfcfb;
+  padding: 3rem;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+
+}
+
+
+p:last-of-type {
+  margin-bottom: 2em;
+}
+
+
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  margin-bottom: 0.8em;
+  text-align: center;
+  color: #c4671b;
+}
+
+.bio {
+  width: 80%;
+  margin: 1em auto;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.intro {
+  border-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  padding: 2em;
+  background-color: rgb(248, 220, 189);
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 21px 24px 32px 7px rgba(184,184,184,1);
+
+}
+
+.category {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  margin-bottom: 0.8em;
+  text-align: left;
+  color:  #c4671b;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+
+.personal-skills,
+.software-skills {
+  width: 100%;
+  padding: 1em;
+}
+
+.description {
+  font-size: large;
+  font-family: 'Lato', sans-serif;
+
+
+}
+
+.description1 {
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.personal-skills {
+  text-align: left;
+}
+
+.subcategory {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  color: #c4671b;
+}
+
+.education-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.degree1,
+.degree2,
+.degree3 {
+  width: 100%;
+  padding: 1em;
+}
+
+.degree1 {
+  padding: 2em;
+  border-color: hotpink;
+  border-style: dotted;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: flex-start;
+  flex-direction: column;
+}
+
+.degree2 {
+  padding: 1em;
+  border-color: rgb(61, 9, 250);
+  border-style: dotted;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: center;
+  ;
+  align-items: center;
+  flex-direction: column;
+}
+
+.degree3 {
+  padding: 2em;
+  border-color: rgb(20, 230, 195);
+  border-style: dotted;
+  display: flex;
+  justify-content: space-around;
+  align-self: flex-end;
+  ;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.job {
+  font-size: 2em;
+  color:#c4671b;
+}
+
+strong {
+  font-weight: 100;
+  color: lightblue;
+}
+
+.button {
+  width: 7em;
+  border: 1px solid red;
+  padding: 1em;
+  border-radius: 1em;
+  background: white;
+}
+
+/*
+
+       ___  __             __        ___  __     ___  __  
+ |\/| |__  |  \ |  /\     /  \ |  | |__  |__) | |__  /__` 
+ |  | |___ |__/ | /~~\    \__X \__/ |___ |  \ | |___ .__/ 
+                                                          
+
+ */
+
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {
+
+  .skills-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .personal-skills {
+    border-right: 2px solid   #c4671b;
+    text-align: right; 
+  }
+
+  .personal-skills,
+  .software-skills {
+    width: 50%;
+  }
+
+  .description {
+    font-weight: 500;
+  }
+
+  .bio {
+    width: 80%;
+    margin: 1em auto;
+    font-size: 2em;
+    text-align: center;
+  }
+
+}
+
+.education-container {
+  display: flex;
+  width: 30%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 1280px) {
+  .description {
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1536px) {}
