@@ -1,4 +1,3 @@
-
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@300;400;700&display=swap');
 
@@ -22,12 +21,9 @@ body {
 
 }
 
-
 p:last-of-type {
   margin-bottom: 2em;
 }
-
-
 
 .title {
   font-family: 'Oswald', sans-serif;
@@ -40,19 +36,20 @@ p:last-of-type {
 .bio {
   width: 80%;
   margin: 1em auto;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   font-family: 'Lato', sans-serif;
+  line-height: 1.2em;
 }
 
 .intro {
   border-color: rgba(0, 0, 0, 0);
   border-style: solid;
-  padding: 2em;
+  padding: 1em;
   background-color: rgb(248, 220, 189);
   width: 75%;
   margin: 0 auto;
-  box-shadow: 21px 24px 32px 7px rgba(184,184,184,1);
+  box-shadow: 21px 24px 32px 7px rgba(184, 184, 184, 1);
 
 }
 
@@ -60,9 +57,10 @@ p:last-of-type {
   font-family: 'Oswald', sans-serif;
   font-size: 3em;
   margin-bottom: 0.8em;
-  text-align: left;
-  color:  #c4671b;
+  margin-top: 0.9em;
+  color: #c4671b;
   text-align: center;
+  font-weight: 800;
 }
 
 .skills-container {
@@ -71,8 +69,6 @@ p:last-of-type {
   flex-direction: column;
 }
 
-
-
 .personal-skills,
 .software-skills {
   width: 100%;
@@ -80,17 +76,17 @@ p:last-of-type {
 }
 
 .description {
-  font-size: large;
+  font-size: 1em;
   font-family: 'Lato', sans-serif;
-
+  line-height: 1.2em;
 
 }
 
 .description1 {
-  font-size: 3em;
+  font-size: 1em;
   font-family: 'Lato', sans-serif;
+  line-height: 1.2em;
 }
-
 
 .personal-skills {
   text-align: left;
@@ -100,39 +96,124 @@ p:last-of-type {
   font-family: 'Oswald', sans-serif;
   font-size: 3em;
   font-weight: bold;
-  font-style: italic;
+  font-style: oblique;
   color: #c4671b;
 }
 
-.education-container {
+.timeline-section {
+  min-height: 100vh;
+  padding: 100px 15px;
+  max-width: 1200px;
+  position: relative;
+  margin: 100px auto;
+}
+
+.timeline-items {
+  max-width: 1000px;
+  margin: auto;
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 40px;
   width: 100%;
-  flex-direction: row;
+  position: relative;
 }
 
-.degree1,
-.degree2,
-.degree3 {
-
-
-  background: white;
-
-
+.timeline-items::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #1bc45f;
+  left: calc(50% - 1px)
 }
 
-.degree-container {  display: flex;
-  width: 33.33333%;
+.timeline-items:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-items:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+}
+
+.timeline-items:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+  height: 16px;
+  width: 16px;
+  background-color: rgb(192, 103, 30);
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-size: 2em;
+  color: rgb(192, 103, 30);
+  margin: 6px 8px 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.timeline-content {
+  background-color: rgb(248, 220, 189);
   padding: 1em;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.timeline-content h6,
+h7,
+h8,
+h9 {
+  font-size: 2em;
+  color: chocolate;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-family: 'Lato', sans-serif;
+  font-style: bold;
+}
+
+.timeline-content p {
+  color: black;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.experience-container{ display: flex;
+  width: 100%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: orangered;}
+}
 
-
+.job, .info, .date{
+  width: 100%;
+padding: 15px;
+}
 
 .job {
-  font-size: 2em;
-  color:#c4671b;
+  font-size: 25px;
+  color: #c4671b;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+
+}
+
+.info, .date{font-size: 25px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  background-color: #27198f;
+max-width: 100%;
+}
+.duties {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.2em;
+  color: black;
+
 }
 
 strong {
@@ -162,6 +243,13 @@ strong {
 @media (min-width: 768px) {}
 
 @media (min-width: 1024px) {
+  
+  .bio {
+    width: 80%;
+    margin: 1em auto;
+    font-size: 2em;
+    text-align: center;
+  }
 
   .skills-container {
     flex-wrap: wrap;
@@ -171,8 +259,8 @@ strong {
   }
 
   .personal-skills {
-    border-right: 2px solid   #c4671b;
-    text-align: right; 
+    border-right: 4px solid #c4671b;
+    text-align: right;
   }
 
   .personal-skills,
@@ -181,32 +269,40 @@ strong {
   }
 
   .description {
-    font-weight: 500;
-  }
 
-  .bio {
-    width: 80%;
-    margin: 1em auto;
     font-size: 2em;
-    text-align: center;
   }
 
-}
+  .description1 {
 
-.education-container {
-  display: flex;
-  width: 50%;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  border: 2px solid purple;
-  margin: 0 auto;
-}
+    font-size: 2em;
+  }
 
-@media (min-width: 1280px) {
-  .description {
-    font-weight: 700;
+  .experience-container{ display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   
+  }
+
+  .job, .info, .date{
+    width: 33.333%;
+    margin: 1em auto;
+    
+  }
+
+  .duties {
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2em;
+
   }
 }
+
+
+
+@media (min-width: 1280px) {}
 
 @media (min-width: 1536px) {}
